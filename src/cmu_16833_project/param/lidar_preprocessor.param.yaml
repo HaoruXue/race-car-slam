@@ -1,0 +1,57 @@
+# Concatenator
+timeout_sec: 0.1
+
+
+# CropBoxFilter
+min_x: -100.0
+max_x: 100.0
+min_y: -30.0
+max_y: 30.0
+min_z: -3.0
+max_z: 3.0
+negative: false
+
+# Distortion Corrector
+timestamp_field_name: "time_stamp"
+use_imu: true
+
+# Downsampler
+voxel_size_x: 0.1
+voxel_size_y: 0.1
+voxel_size_z: 0.1
+
+# Ground remover
+global_slope_max_angle_deg: 15.0
+local_slope_max_angle_deg: 20.0 # recommended 30.0 for non elevation_grid_mode
+split_points_distance_tolerance: 1.0
+use_virtual_ground_point: True
+split_height_distance: 0.2
+non_ground_height_threshold: 0.05
+grid_size_m: 0.1
+grid_mode_switch_radius: 20.0
+gnd_grid_buffer_size: 4
+detection_range_z_max: 6.0
+elevation_grid_mode: true
+
+# Euclidean Clustering
+max_cluster_size: 5000
+min_cluster_size: 20
+tolerance: 1.5
+use_height: false
+
+# Shape Estimation
+use_corrector: false
+use_filter: true
+use_vehicle_reference_yaw: true
+
+# Vehicle info
+wheel_radius: 0.38
+wheel_width: 0.38
+wheel_base: 2.9718 # between front wheel center and rear wheel center
+wheel_tread: 1.6 # between left wheel center and right wheel center
+front_overhang: 0.9 # between front wheel center and vehicle front
+rear_overhang: 0.7 # between rear wheel center and vehicle rear
+left_overhang: 0.0 # between left wheel center and vehicle left
+right_overhang: 0.0 # between right wheel center and vehicle right
+vehicle_height: 1.5
+max_steer_angle: 0.3926991 # [rad]
