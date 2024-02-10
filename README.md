@@ -1,6 +1,8 @@
-# cmu-16833-project
-High-Speed Localization for Autonomous Race Cars in GNSS-Denied Scenarios
+# High-Speed Localization for Autonomous Race Cars in GNSS-Denied Scenarios
 
+(Click on image to watch on YouTube)
+
+[![video](https://img.youtube.com/vi/uOAymmNPiZs/maxresdefault.jpg)](https://www.youtube.com/watch?v=uOAymmNPiZs)
 
 ## Import Dependencies
 
